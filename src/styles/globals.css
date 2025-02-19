@@ -26,11 +26,26 @@
 }
 
 @layer base {
-  * {
-    border-color: var(--sidebar-border);
-  }
+  
   body {
     background-color: var(--sidebar-background);
     color: var(--sidebar-foreground);
   }
+
+  .table-container {
+    width: 50%; /* Ajuste o tamanho da tabela (80% da tela neste exemplo) */
+    margin: 0 auto; /* Centraliza a tabela */    
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .table {
+    margin-top: 16px;
+  }
+  
+
 }
