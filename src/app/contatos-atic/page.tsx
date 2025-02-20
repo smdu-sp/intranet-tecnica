@@ -37,10 +37,16 @@ const dev: Person[] = [
     { name: "Orlando Cabral do Nascimento Junior", phone: "3243-1211" },    
   ]
 
+  const stel = [
+    { name: "Helio Freitas Filho", phone: "3243-1244" }, 
+    { name: "Helena Sertorio Senise	", phone: "3243-1244" },
+  ]  
+
 export default function ContatosAtic() {
   return (
     <div className="p-6 gap-7">
       <Tabela data={chefe} titulo="Chefia de Assessoria" />
+      <Tabela data={stel} titulo="STEL" />
       <Tabela data={suporte} titulo="Suporte" />
       <Tabela data={administrativo} titulo="Administrativo" />
       <Tabela data={dev} titulo="Desenvolvimento de Sistemas" />

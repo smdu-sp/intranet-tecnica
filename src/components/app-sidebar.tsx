@@ -4,7 +4,7 @@ import * as React from "react"
 import {
   AudioWaveform,
   BookOpen,
-  Bot,
+  Wrench ,
   Command,
   Frame,
   GalleryVerticalEnd,
@@ -89,26 +89,19 @@ const data = {
       ],
     },
     {
-      title: "Settings",
+      title: "Suporte",
       url: "#",
-      icon: Settings2,
+      icon: Wrench,
       items: [
         {
-          title: "General",
+          title: "Informática - GLPI",
           url: "#",
         },
         {
-          title: "Team",
-          url: "#",
+          title: "Manutenção CAF/DSUP",
+          url: "http://dsup.smul.pmsp",
         },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
+       
       ],
     },
   ],
