@@ -21,12 +21,32 @@ const dev: Person[] = [
     { name: "Vinicius Oliveira Giuliani", phone: "3243-1245" },  
   ]
 
+  const chefe: Person[] = [
+    { name: "Carlos Eduardo Moraes", phone: "3243-1246" },
+  ]
+
+  const administrativo: Person[] = [
+    { name: "Cheila Sodre", phone: "3243-1242" },
+    { name: "Felipe dos Santos Caprara", phone: "3243-1211" },
+    { name: "Juliana Oliveira de Carvalho", phone: "3243-1211" },
+    { name: "Juliette Maria Alfonso Frederico", phone: "3243-1242" },
+    { name: "Tiago Martins Pinheiro", phone: "3243-1242" },   
+  ]
+
+  const cadastro: Person[] = [
+    { name: "Orlando Cabral do Nascimento Junior", phone: "3243-1211" },
+    
+  ]
+
 
 export default function Contatos() {
   return (
-    <div className="p-6">
+    <div className="p-6 gap-7">
+      <Tabela data={chefe} titulo="Chefia de Assessoria" />
       <Tabela data={suporte} titulo="Suporte" />
-      <Tabela data={dev} titulo="Desenvolvimento" />
+      <Tabela data={administrativo} titulo="Administrativo" />
+      <Tabela data={dev} titulo="Desenvolvimento de Sistemas" />
+      <Tabela data={cadastro} titulo="Cadastro de Usuários" />
     </div>
     
 

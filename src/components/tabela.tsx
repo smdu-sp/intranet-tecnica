@@ -27,18 +27,18 @@ export default function Tabela({ data, titulo }: TabelaProps) {
       </div>
       <Table className="w-full">
         <TableHeader>
-          <TableRow className="bg-gray-100">
-            <TableHead className="text-gray-900">Nome</TableHead>
-            <TableHead className="text-gray-900">Telefone</TableHead>
-            <TableHead className="text-gray-900">E-mail</TableHead>
+          <TableRow >
+            <TableHead>Nome</TableHead>
+            <TableHead>Telefone</TableHead>
+            <TableHead>E-mail</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
           {data.map((person, index) => (
-            <TableRow key={index} className="hover:bg-gray-200">
-              <TableCell className="bg-white text-gray-900">{person.name}</TableCell>
-              <TableCell className="bg-white text-gray-900">{person.phone}</TableCell>
-              <TableCell className="bg-white text-gray-900">{person.email || "N/A"}</TableCell>
+            <TableRow key={index}>
+              <TableCell>{person.name}</TableCell>
+              <TableCell>{person.phone}</TableCell>
+              <TableCell>{person.email || "N/A"}</TableCell>
             </TableRow>
           ))}
         </TableBody>
