@@ -34,10 +34,8 @@ const dev: Person[] = [
   ]
 
   const cadastro: Person[] = [
-    { name: "Orlando Cabral do Nascimento Junior", phone: "3243-1211" },
-    
+    { name: "Orlando Cabral do Nascimento Junior", phone: "3243-1211" },    
   ]
-
 
 export default function Contatos() {
   return (
