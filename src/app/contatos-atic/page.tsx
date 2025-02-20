@@ -37,7 +37,7 @@ const dev: Person[] = [
     { name: "Orlando Cabral do Nascimento Junior", phone: "3243-1211" },    
   ]
 
-export default function Contatos() {
+export default function ContatosAtic() {
   return (
     <div className="p-6 gap-7">
       <Tabela data={chefe} titulo="Chefia de Assessoria" />
@@ -45,9 +45,6 @@ export default function Contatos() {
       <Tabela data={administrativo} titulo="Administrativo" />
       <Tabela data={dev} titulo="Desenvolvimento de Sistemas" />
       <Tabela data={cadastro} titulo="Cadastro de Usuários" />
-    </div>
-    
-
-    
+    </div>     
   );
 }
